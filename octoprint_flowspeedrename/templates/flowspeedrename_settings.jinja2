@@ -1,0 +1,25 @@
+<h3>{{ _('Rename Feed/Flow buttons') }}</h3>
+<div>
+    <form class="form-horizontal">
+        <div class="control-group">
+            <label class="control-label">{{ _('Feed Rate Name:') }}</label>
+            <div class="controls">
+                <input type="text" class="input-block" data-bind="value: settings.plugins.flowspeedrename.feedname">
+                <span class="help-block">{{ _('This is the button below the XYZ controls and is for the movement speed of each axis.') }}</span>
+            </div>
+        </div>
+        
+        <div class="control-group">
+            <label class="control-label">{{ _('Extrusion multiplier button name:') }}</label>
+            <div class="controls">
+                <input type="text" class="input-block" data-bind="value: settings.plugins.flowspeedrename.flowname">
+                <span class="help-block">{{ _('This is the button below the tool controls and is for the extrusion rate multiplier (also known as extrusion factor).') }}</span>
+            </div>
+        </div>
+
+        
+    </form>
+    <div>
+        <span class="help-block">{{ _('Force a browser refresh to update after changing these values.') }}</span>
+    </div>
+</div>
