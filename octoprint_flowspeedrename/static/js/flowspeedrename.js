@@ -15,7 +15,6 @@ $(function() {
         self.onBeforeBinding = function () {
             self.settings.feedname(self.settings.settings.plugins.flowspeedrename.feedname());
             self.settings.flowname(self.settings.settings.plugins.flowspeedrename.flowname());
-            console.log(self.settings.feedname());        
             try {
                 $(".jog-panel").find("button:contains('Feed')").eq(0).html("" + self.settings.feedname() + ":<span data-bind=\"text: feedRate() + '%'\"></span>");
                 $("#control-jog-extrusion").find("button:contains('Flow')").eq(0).html("" + self.settings.flowname() + ":<span data-bind=\"text: flowRate() + '%'\"></span>");
