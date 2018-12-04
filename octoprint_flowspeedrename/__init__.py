@@ -10,8 +10,8 @@ class FlowspeedrenamePlugin(octoprint.plugin.SettingsPlugin,
 
 	def get_settings_defaults(self):
 		return dict(
-			flowname="Flow Rate",
-			feedname="Feed Rate"
+			flowname='<i class="fa fa-sort-amount-asc"></i> Flow',
+			feedname='<i class="fa fa-arrows"></i> Speed'
 		)
 
 	def get_assets(self):
